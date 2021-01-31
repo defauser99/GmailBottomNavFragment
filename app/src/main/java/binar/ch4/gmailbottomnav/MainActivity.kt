@@ -30,6 +30,10 @@ class MainActivity : AppCompatActivity() {
                 }
                 return@setOnNavigationItemSelectedListener true
             }
+
+            val badge = it.bottomNavBar.getOrCreateBadge(R.id.mail_menu)
+            badge.isVisible = true
+            badge.number = 1
         }
     }
 
